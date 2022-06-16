@@ -1,0 +1,61 @@
+{
+  "manifestVersion": 1,
+  "version": "1.0.4",
+  "name": "AzBoards template-project",
+  "description": "template-description",
+  "publisher": "ESDC-IT-SABR-RP",
+  "demands": [
+    "api-version/5.1"
+  ],
+  "categories": ["Azure Boards"],
+  "scopes": [
+    "vso.work_full"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "links": {
+    "repository": {
+      "uri": "https://github.com/sara-sabr/template-project"
+    },
+    "issues": {
+      "uri": "https://github.com/sara-sabr/template-project/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/sara-sabr/template-project/"
+  },
+  "branding": {
+    "color": "rgb(51,65,133)",
+    "theme": "dark"
+  },
+  "galleryFlags": [
+    "Preview"
+  ],
+  "tags": [
+    "Work Items"
+  ],
+  "content": {
+    "details": {
+      "path": "marketplace/overview.md"
+    },
+    "license": {
+      "path": "marketplace/license.md"
+    }
+  },
+  "CustomerQnASupport": {
+    "enablemarketplaceqna":"false"
+  },
+  "icons": {
+    "default": "dist/static/img/logo.png"
+  },
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    }
+  ]
+}

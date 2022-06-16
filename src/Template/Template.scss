@@ -1,0 +1,105 @@
+@import "node_modules/azure-devops-ui/Core/_platformCommon.scss";
+
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+
+table.status-report-tables {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.status-report-tables tr {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+table.status-report-tables tr.status-report-header-row th {
+    color: white;
+    background-color: #0072C1;
+}
+
+table.status-report-tables tr.status-report-grouped-header-row th {
+    color: black;
+    background-color: #A3C6E3;
+    text-align: left;
+    padding-left: 4px;
+}
+
+table.status-report-tables tr.status-report-entry-row td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 4px;
+}
+
+table.status-report-tables th.status-report-col-status,
+table.status-report-tables td.status-report-col-status {
+    width: 5%;
+    text-align: center;
+}
+
+table.status-report-tables th.status-report-col-estimate-date,
+table.status-report-tables td.status-report-col-estimate-date {
+    width: 10%;
+    text-align: left;
+}
+
+table.status-report-tables th.status-report-col-details,
+table.status-report-tables td.status-report-col-details {
+    width: 85%;
+    text-align: left;
+}
+
+table.status-report-tables li {
+    list-style-type: disc;
+}
+
+table.status-report-tables ul,
+table.status-report-tables ol {
+    padding-left: 40px;
+}
+
+table.status-report-tables {
+    border-width: thin;
+    border-color: gray;
+}
+
+div.activityTitle {
+    font-weight: bold;
+    border-bottom: 1px dotted black;
+    padding:0;
+}
+
+div.only-on-print {
+    display: none;
+}
+
+@media print {
+    /** Show the top header */
+    div.bolt-header-with-commandbar {
+        display: none;
+    }
+
+    div.only-on-print {
+        display: flex;
+    }
+
+    /** force scroll bar to print all pages */
+    div#root > div.v-scroll-auto {
+        overflow-y: visible;
+    }
+
+    /** force font to be black as dark mode by default has white font and white background while printing. */
+    body {
+        color: black !important;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "contributions": [
+    {
+      "id": "esdc.it-rp.template-id.example",
+      "type": "ms.vss-web.hub",
+      "targets": ["ms.vss-work-web.work-hub-group"],
+      "properties": {
+        "name": "Template",
+        "uri": "dist/Template/Template.html",
+        "order": 100,
+        "icon": {
+          "dark": "dist/static/img/Template.png",
+          "light": "dist/static/img/Template.png"
+        }
+      }
+    }
+  ]
+}
